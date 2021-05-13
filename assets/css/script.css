@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1vw;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.1fr;
+    grid-template-areas: "header header" "portfolio-nav portfolio-item" "portfolio-nav site-nav";
+    grid-gap: 1em;
+}
+
+h1 {
+    grid-area: header;
+    justify-self: right;
+}
+
+.portfolio-nav {
+    grid-area: portfolio-nav;
+    align-self: center;
+}
+
+.portfolio-item {
+    grid-area: portfolio-item;
+}
+
+.site-nav {
+    grid-area: site-nav;
+}
